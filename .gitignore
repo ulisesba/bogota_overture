@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Go build output
+*.exe
+*.out
+*.test
+*.prof
+server
+

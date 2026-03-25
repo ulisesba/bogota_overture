@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chicó Norte - Street Graph Distance</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      #wrap {
+        height: 100%;
+        width: 100%;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      #panel {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        z-index: 1000;
+        max-width: 420px;
+      }
+      #panel button {
+        margin-top: 8px;
+      }
+      .small {
+        font-size: 12px;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panel">
+      <div><strong>Click A y luego B</strong></div>
+      <div class="small">Se calcula la distancia por calles con el grafo.</div>
+      <div style="margin-top: 8px" id="out">Distancia: (haz click)</div>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <div id="wrap">
+      <canvas id="c"></canvas>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+

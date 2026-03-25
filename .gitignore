@@ -7,5 +7,6 @@
 *.out
 *.test
 *.prof
-server
+# Binary built at repo root (go build -o server)
+/server
 

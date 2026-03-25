@@ -23,7 +23,7 @@ func main() {
 	)
 	flag.Parse()
 
-	g, err := graph.BuildFromGeoJSON(*geojsonPath)
+	g, err := graph.FromGeoJSON(*geojsonPath)
 	if err != nil {
 		log.Fatal("failed to load graph:", err)
 	}
@@ -72,7 +72,7 @@ func main() {
 	)
 	flag.Parse()
 
-	g, err := graph.BuildFromGeoJSON(*geojsonPath)
+	g, err := graph.FromGeoJSON(*geojsonPath)
 	if err != nil {
 		log.Fatal("failed to load graph:", err)
 	}
@@ -121,7 +121,7 @@ func main() {
 	)
 	flag.Parse()
 
-	g, err := graph.BuildFromGeoJSON(*geojsonPath)
+	g, err := graph.FromGeoJSON(*geojsonPath)
 	if err != nil {
 		log.Fatal("failed to load graph:", err)
 	}
